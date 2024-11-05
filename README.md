@@ -10,13 +10,19 @@ Source code for distributed capstone project
 git clone https://github.com/huannguyen2114/Distrbuted-System-Capstone-Project.git
 ```
 
-##### 2. create hadoop network
+##### 2. build image
+
+```
+./build-image.sh  
+```
+
+##### 3. create hadoop network
 
 ```
 sudo docker network create --driver=bridge hadoop
 ```
 
-##### 3. start container
+##### 4. start container
 
 ```
 cd hadoop-cluster-docker
@@ -35,7 +41,7 @@ root@hadoop-master:~#
 - you will get into the /root directory of hadoop-master container
 
 
-##### 4. start hadoop
+##### 5. start hadoop
 
 ```
 ./start-hadoop.sh
@@ -51,7 +57,7 @@ root@hadoop-master:~# jps
 ```
 
 
-##### 5. run matrix-multiply
+##### 6. run matrix-multiply
 
 ```
 ./run-matrix-multiply.sh
