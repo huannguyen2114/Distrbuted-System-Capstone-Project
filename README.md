@@ -25,7 +25,7 @@ sudo docker network create --driver=bridge hadoop
 ##### 4. start container
 
 ```
-cd hadoop-cluster-docker
+cd Distrbuted-System-Capstone-Project 
 sudo ./start-container.sh
 ```
 
